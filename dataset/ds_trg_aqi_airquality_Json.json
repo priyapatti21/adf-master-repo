@@ -1,0 +1,23 @@
+{
+	"name": "ds_trg_aqi_airquality_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_trg_aqi_airquality_json",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "trg_aqi"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "air_qaulity_Json",
+				"fileSystem": "silver"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

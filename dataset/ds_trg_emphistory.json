@@ -1,0 +1,27 @@
+{
+	"name": "ds_trg_emphistory",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_trg_emphistory",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "ds_trg_employee_all"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "data flow",
+				"fileSystem": "silver"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

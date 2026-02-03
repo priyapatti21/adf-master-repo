@@ -1,0 +1,32 @@
+{
+	"name": "ds_trg_aqi_case",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ds_trg_aqi_case",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"OutputFolderlocation": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().OutputFolderlocation",
+					"type": "Expression"
+				},
+				"fileSystem": "silver"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

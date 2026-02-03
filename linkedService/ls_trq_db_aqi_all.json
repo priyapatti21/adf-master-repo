@@ -1,0 +1,17 @@
+{
+	"name": "ls_trq_db_aqi_all",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "database-server-priya.database.windows.net",
+			"database": "database-dev-priya",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "ppatti",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEQ2RjVCMEZDLTg1QTUtNDY5Qi1CREI0LUNGQTlBMTlEMzkxOV85ZThkOTBlOC1mZWFiLTQ5NTItYjBjYS00NDgzZGZkNmRkOWIiDQp9"
+		}
+	}
+}

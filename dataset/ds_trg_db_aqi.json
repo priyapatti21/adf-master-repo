@@ -1,0 +1,25 @@
+{
+	"name": "ds_trg_db_aqi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_trg_db_aqi_all",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
